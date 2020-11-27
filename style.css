@@ -21,6 +21,17 @@
 
 .trabalhe-conosco {
     background-color: darkgoldenrod;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-top: 100%; 
+    padding-bottom: 50px;
+}
+
+.redes-sociais {
+    
+    display: flex;
 }
 
 .cases {
