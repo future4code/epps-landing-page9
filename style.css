@@ -9,23 +9,22 @@
 }
 
 .produto {
-  background-color: #b2b0d2;
-  color: #fff;
+  background-color: #d2c2b0;
+  
 }
 .subtitulo {
   text-align: center;
   padding: 5vh;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+
+  color: #fff;
 }
 .sobre {
   padding: 2vh;
   letter-spacing: 0.07em;
+  color: #fff;
+  
 }
 .lista {
-  /*  margin: 2vh; */
   padding: 0 2vh 5vh 2vh;
   box-sizing: border-box;
 }
@@ -40,28 +39,29 @@
 }
 
 .lista-produto {
-  display: inline-block;
+  
   width: 20%;
   height: 15vw;
-  list-style: none;
-  background-color: #d2c2b0;
+  
+  background-color: #1f1f24;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 20px;
+  border: 5px solid #1f1f24;
 }
 .item {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.lista-item-imagem {
-  color: black;
-}
+
 .lista-item-titulo {
   text-align: center;
   color: #fff;
   padding-top: 2vh;
   margin-bottom: 2vh;
+  text-transform: uppercase;
 }
 .lista-paragrafo {
   color: #eee;
@@ -71,7 +71,7 @@
 .lista-span {
   display: block;
   color: #eee;
-  font-weight: 500;
+  font-weight: 700;
   padding: 1px;
 }
 .lista-link {
@@ -80,24 +80,24 @@
   margin: 2vh;
 }
 
-.lista-item {
+.lista-equipe {
   display: inline-block;
   width: 20%;
   height: 25vw;
-  list-style: none;
-  background-color: #fff;
+ 
+  border: 5px solid #d2c2b0;
+  border-radius: 20px;
 }
-
+.lista-equipe-imagem {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  background-color: #d2c2b0;
+  border-radius: 50%;
+}
 .equipe {
-  background-color: #d2b0d0;
-}
-
-.nosso-time {
-  background-color: darkgreen;
-}
-
-.trabalhe-conosco {
-  background-color: darkgoldenrod;
+  background-color: #1f1f24;
+  color: #fff;
 }
 
 .cases {
