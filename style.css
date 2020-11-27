@@ -55,6 +55,10 @@ header {
     
     display: flex;
 }
+header img {
+    height: 60px;
+    margin-left: 10px;
+}
 
 ul {
     margin-right: 10px;
