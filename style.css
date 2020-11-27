@@ -1,155 +1,245 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Para escolher a cor, USE '--VAR(--corX)' no lugar de '#FFFFFF' onde x é o número da cor */
 :root {
-    --cor1:#1f1f24;
-    --cor2:#ffffff;
-    --cor3:#d2b0d0;
-    --cor4:#d0d2b0;
-    --cor5:#d2c2b0;
-    --cor6:#b2b0b2;
+  --cor1: #1f1f24;
+  --cor2: #ffffff;
+  --cor3: #d2b0d0;
+  --cor4: #d0d2b0;
+  --cor5: #d2c2b0;
+  --cor6: #b2b0b2;
 }
 
 a {
-    text-decoration: none;
-    color: var(--cor2);
+  text-decoration: none;
+  color: var(--cor2);
 }
 
 ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 /* ------------ CABEÇALHO ------------ */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    background-color: var(--cor1);
-    box-shadow: 0px 2px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--cor1);
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .section {
-    height: 90vh;
-    padding-top: 10vh;
-    scroll-snap-align: start;
+  height: 90vh;
+
+  scroll-snap-align: start;
+}
+#quem-somos {
+  padding-top: 10vh;
 }
 
 .trabalhe-conosco {
-    background-color: darkgoldenrod;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    flex-direction: row-reverse;
-    margin-top: 100%; 
-    padding-bottom: 50px;
+  background-color: darkgoldenrod;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  margin-top: 100%;
+  padding-bottom: 50px;
 }
 
 .redes-sociais {
-    
-    display: flex;
+  display: flex;
 }
 header img {
-    height: 60px;
-    margin-left: 10px;
+  height: 60px;
+  margin-left: 10px;
 }
 
 ul {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 li {
-    background-color: var(--cor5);
-    margin: 0 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    transition: all ease 0.4s;
+  background-color: var(--cor5);
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.4s;
 }
 
 header li:hover,
 #secao-1-texto button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 header li:active,
 #secao-1-texto button:active {
-    background-color: var(--cor2);
-    color: var(--cor1);
-    transition: ease-in 0.1s;
+  background-color: var(--cor2);
+  color: var(--cor1);
+  transition: ease-in 0.1s;
 }
 
 /* ------------ SEÇÃO 1 ------------ */
 #quem-somos {
-    background-image: url(./img/secao-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./img/secao-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #secao-1-texto {
-    background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    top: 20vh;
-    height: 70%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 2%;
-    text-align: justify;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20vh;
+  height: 70%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2%;
+  text-align: justify;
 }
 
 #secao-1-texto p:nth-child(1) {
-    font-size: 6rem;
+  font-size: 6rem;
 }
 
 #secao-1-texto p:nth-child(2) {
-    font-size: 3rem;
-    line-height: 1.3em;
+  font-size: 3rem;
+  line-height: 1.3em;
 }
 
 #secao-1-texto span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #secao-1-texto button {
-    height: 4rem;
-    width: 10rem;
-    background-color: var(--cor5);
-    margin: 0 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    transition: all ease 0.4s;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--cor2);
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  height: 4rem;
+  width: 10rem;
+  background-color: var(--cor5);
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  transition: all ease 0.4s;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cor2);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* ------------ SEÇÃO 2 ------------ */
-#projetos {
-    background-color: darkviolet;
+.produto {
+  background-color: #d2c2b0;
+}
+.subtitulo {
+  text-align: center;
+  padding: 5vh;
+
+  color: #fff;
+}
+.sobre {
+  padding: 2vh;
+  letter-spacing: 0.07em;
+  color: #fff;
+}
+.lista {
+  padding: 0 2vh 5vh 2vh;
+  box-sizing: border-box;
 }
 
-#contato {
-    background-color: darkred;
+.lista ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 
-#nosso-time {
-    background-color: darkgreen;
-    padding-bottom: 10vh;
+.lista-produto {
+  width: 20%;
+  height: 15vw;
+
+  background-color: #1f1f24;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 5px solid #1f1f24;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-#midias-sociais {
-    background-color: darkgoldenrod;
-    height: 10vh;
+.lista-item-titulo {
+  text-align: center;
+  color: #fff;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+}
+.lista-paragrafo {
+  color: #eee;
+  font-weight: 200;
+  margin-left: 2vh;
+}
+.lista-span {
+  display: block;
+  color: #eee;
+  font-weight: 700;
+  padding: 1px;
+}
+.lista-link {
+  color: #fff;
+  margin-top: 10px;
+  margin: 2vh;
+}
+
+.lista-equipe {
+  display: inline-block;
+  width: 20%;
+  height: 25vw;
+
+  border: 5px solid #d2c2b0;
+  border-radius: 20px;
+}
+.lista-equipe-imagem {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.equipe {
+  background-color: #1f1f24;
+  color: #fff;
+}
+
+.cases {
+  background-color: darkgoldenrod;
+}
+
+.onde-estamos {
+  background-color: brown;
+}
+
+.faqs {
+  background-color: blue;
+}
+
+.promos {
+  background-color: aqua;
 }
