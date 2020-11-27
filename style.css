@@ -1,40 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .quem-somos {
-    background-color: deeppink;
+  background-color: deeppink;
 }
 
-.projetos {
-    background-color: darkviolet;
+.produto {
+  background-color: #d2c2b0;
+  
+}
+.subtitulo {
+  text-align: center;
+  padding: 5vh;
+
+  color: #fff;
+}
+.sobre {
+  padding: 2vh;
+  letter-spacing: 0.07em;
+  color: #fff;
+  
+}
+.lista {
+  padding: 0 2vh 5vh 2vh;
+  box-sizing: border-box;
 }
 
-.contato {
-    background-color: darkred;
+.lista ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 
-.nosso-time {
-    background-color: darkgreen;
+.lista-produto {
+  
+  width: 20%;
+  height: 15vw;
+  
+  background-color: #1f1f24;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 5px solid #1f1f24;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.trabalhe-conosco {
-    background-color: darkgoldenrod;
+.lista-item-titulo {
+  text-align: center;
+  color: #fff;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+}
+.lista-paragrafo {
+  color: #eee;
+  font-weight: 200;
+  margin-left: 2vh;
+}
+.lista-span {
+  display: block;
+  color: #eee;
+  font-weight: 700;
+  padding: 1px;
+}
+.lista-link {
+  color: #fff;
+  margin-top: 10px;
+  margin: 2vh;
+}
+
+.lista-equipe {
+  display: inline-block;
+  width: 20%;
+  height: 25vw;
+ 
+  border: 5px solid #d2c2b0;
+  border-radius: 20px;
+}
+.lista-equipe-imagem {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  background-color: #d2c2b0;
+  border-radius: 50%;
+}
+.equipe {
+  background-color: #1f1f24;
+  color: #fff;
 }
 
 .cases {
-    background-color: darkgoldenrod;
+  background-color: darkgoldenrod;
 }
 
 .onde-estamos {
-    background-color: brown;
+  background-color: brown;
 }
 
 .faqs {
-    background-color: blue;
+  background-color: blue;
 }
 
 .promos {
-    background-color: aqua;
+  background-color: aqua;
 }
