@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.quem-somos {
+    background-color: deeppink;
+}
+
+.projetos {
+    background-color: darkviolet;
+}
+
+.contato {
+    background-color: darkred;
+}
+
+.nosso-time {
+    background-color: darkgreen;
+}
+
+.trabalhe-conosco {
+    background-color: darkgoldenrod;
+}
+
+.cases {
+    background-color: darkgoldenrod;
+}
+
+.onde-estamos {
+    background-color: brown;
+}
+
+.faqs {
+    background-color: blue;
+}
+
+.promos {
+    background-color: aqua;
+}
