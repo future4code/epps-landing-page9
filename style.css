@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Para escolher a cor, USE '--VAR(--corX)' no lugar de '#FFFFFF' onde x é o número da cor */
@@ -12,6 +13,13 @@
   --cor4: #d0d2b0;
   --cor5: #d2c2b0;
   --cor6: #b2b0b2;
+  --fonte1:'Roboto', sans-serif;
+  --fonte2:'Teko', sans-serif;
+  --fonte3:'Ubuntu', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -28,31 +36,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 80px;
+  width: 100vw;
   background-color: var(--cor1);
   box-shadow: 0px 2px rgba(0, 0, 0, 0.3);
   position: fixed;
-  width: 100%;
+  top: 0;
   z-index: 1;
-}
-
-.section {
-  height: 90vh;
-
-  scroll-snap-align: start;
-}
-#quem-somos {
-  padding-top: 10vh;
-}
-
-.trabalhe-conosco {
-  background-color: darkgoldenrod;
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-  flex-direction: row-reverse;
-  margin-top: 100%;
-  padding-bottom: 50px;
 }
 
 .redes-sociais {
@@ -60,15 +50,17 @@ header {
 }
 header img {
   height: 60px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
-ul {
-  margin-right: 10px;
+header ul {
+  margin-right: 20px;
 }
 
-li {
+header li {
   background-color: var(--cor5);
+  font-family: var(--fonte2);
+  font-size: 1.5rem;
   margin: 0 5px;
   padding: 10px;
   border: none;
@@ -90,9 +82,14 @@ header li:active,
 
 /* ------------ SEÇÃO 1 ------------ */
 #quem-somos {
-  background-image: url(./img/secao-1.jpg);
+  background-image: url(./img/secao-01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 80px;
+  top: 50vh;
+  height: 100vh;
+  width: 100vw;
+ 
 }
 
 #secao-1-texto {
@@ -100,7 +97,8 @@ header li:active,
   position: absolute;
   top: 20vh;
   height: 70%;
-  width: 60%;
+  max-width: 800px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -108,14 +106,18 @@ header li:active,
   box-sizing: border-box;
   padding: 2%;
   text-align: justify;
+  font-family: var(--fonte3);
 }
 
 #secao-1-texto p:nth-child(1) {
-  font-size: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
 }
 
 #secao-1-texto p:nth-child(2) {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.3em;
 }
 
@@ -126,9 +128,8 @@ header li:active,
 #secao-1-texto button {
   height: 4rem;
   width: 10rem;
-  background-color: var(--cor5);
-  margin: 0 5px;
-  padding: 10px;
+  background-color: var(--cor1);
+  margin: 10px 0;
   border: none;
   border-radius: 10px;
   transition: all ease 0.4s;
@@ -136,26 +137,35 @@ header li:active,
   font-weight: bold;
   color: var(--cor2);
   box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
 /* ------------ SEÇÃO 2 ------------ */
 .produto {
   background-color: #d2c2b0;
+  padding: 0 10px;
 }
 .subtitulo {
   text-align: center;
   padding: 5vh;
-
   color: #fff;
+}
+
+div > h2 {
+  width: 100vw;
 }
 .sobre {
   padding: 2vh;
   letter-spacing: 0.07em;
   color: #fff;
+  text-align: justify;
 }
 .lista {
   padding: 0 2vh 5vh 2vh;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lista ul {
@@ -168,13 +178,14 @@ header li:active,
 }
 
 .lista-produto {
-  width: 20%;
-  height: 15vw;
-
+  width: 350px;
+  height: 350px;
+  margin: 10px;
   background-color: #1f1f24;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   border-radius: 20px;
   border: 5px solid #1f1f24;
 }
@@ -209,10 +220,11 @@ header li:active,
 }
 
 .lista-equipe {
-  display: inline-block;
-  width: 20%;
-  height: 25vw;
-
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
   border: 5px solid #d2c2b0;
   border-radius: 20px;
 }
@@ -262,14 +274,9 @@ header li:active,
   justify-content: center;
 }
 
-.contato {
-  width: 100%;
-  max-width: 500px;
-}
-
 .form {
   display: flex;
-  width: 50vh;
+  width: 80vw;
   flex-direction: column;
   margin: 2vh auto;
   }
@@ -287,29 +294,37 @@ textarea {
   height: 150px;
 }
 
-.enviar {
+#enviar {
   background-color: #1f1f24;
   color: #fff;
   border: none;
   border-radius: 10px;
   transition: all ease 0.4s;
-  
+  height: 50px;  
 }
-
-
-
 
 /* SEÇÃO 4 */
 
-.footer {
+footer {
+  display: flex;
+  flex-direction: column;
   background-color: #1f1f24;
-  
-}
-
-#midias-sociais {
   padding:10px;
+  align-items: center;
 }
 
+#midias-sociais img{
+  height: 40px;
+}
 
+footer img:last-child{
+  height: 50px;
+}
 
+/* RESPONSIVIDADE */
+@media only screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}
   
