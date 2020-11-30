@@ -300,8 +300,7 @@ textarea {
   border: none;
   border-radius: 10px;
   transition: all ease 0.4s;
-  height: 50px;
-  
+  height: 50px;  
 }
 
 /* SEÇÃO 4 */
@@ -328,5 +327,4 @@ footer img:last-child{
     display: none;
   }
 }
-
   
